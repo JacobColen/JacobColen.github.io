@@ -6,4 +6,4 @@
       this._canvas.style.width = "100%";
       this._canvas.style.height = "100%";
     }
-  })()
+  })() 
