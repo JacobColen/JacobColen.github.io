@@ -1,3 +1,3 @@
 var gameCanvas = document.getElementById("GameCanvas");
-gameCanvas["width"] = "100%";
-gameCanvas["height"] = "100%";
+gameCanvas.style["width"] = "100%";
+gameCanvas.style["height"] = "100%";
