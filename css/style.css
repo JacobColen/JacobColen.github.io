@@ -1,6 +1,6 @@
 body {
 	background: #fdf498; 
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Montserrat", Times, serif;
 	margin: 0;
 }
 #background {
@@ -152,15 +152,19 @@ img {
 	align: center;
 	width: 852px;
 	margin: 0 auto;
-	margin-bottom: 20px;
-	padding: 15px 8px 01px;
+	margin-bottom: 10px;
+	padding: 15px 8px 1px;
 }
 #recent h1 {
 	color: white;
+	margin-left: 15px;
+	margin-left: 15px;
 }
 #recent p {
 	font-size: 16px;
 	color: white;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 .rec {
 	float: right;
@@ -211,6 +215,17 @@ hr {
 #main div.box h4 a {
 	color: #5a4535;
 	text-decoration: none;
+}
+.index-hover {
+
+}
+.index-hover:hover {
+	content: attr(data-hover) ;
+
+}
+.index-hover:hover:after {
+	content: attr(data-hover) ;
+
 }
 #main div.box ul {
 	list-style: none;
