@@ -92,7 +92,7 @@ img {
 /* Content */
 #contents {
 	display: inline-block;
-	width: 865px;
+	width: 860px;
 	padding: 0 47px;
 }
 #contents h1 {
@@ -143,16 +143,17 @@ img {
 #contents div.body {
 	background-position: -871px top;
 	background-repeat: repeat-y;
-	min-height: 980px;
-	padding: 30px 40px 0;
+	min-height: auto;
+	padding: 30px 30px 30px;
 }
 /** Recente Berichten **/
 #recent {
 	background-color: #3e6958 /*url(../images/bg-adox.png) no-repeat left top*/;
 	align: center;
 	width: 852px;
+	margin: 0 auto;
 	margin-bottom: 20px;
-	padding: 15px 10px 01px;
+	padding: 15px 8px 01px;
 }
 #recent h1 {
 	color: white;
