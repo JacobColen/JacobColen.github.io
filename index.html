@@ -5,6 +5,15 @@
 	<title>Jacob Colenbrander</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script>
+		function showText(id,delay){
+		var elem=document.getElementById(id);
+		setTimeout(function(){elem.style.visibility='visible';},delay*1000)
+		}
+		window.onload=function(){
+		showText('Fictie',6);
+		}
+		</script>
 </head>
 <body>
 	<div id="background">
@@ -116,6 +125,11 @@
 					</div></a>
 					<a style="text-decoration: none" href="contact.html"> <div class="section" style="background-color: #624c3c;">
 						<p style="line-height: 144px; font-size: 36px;"> Contact
+						</p>
+					</div></a>
+					<a id="Fictie" style="visibility:hidden;text-decoration: none" href="recensie.html" > <div class="section" 
+					style="background-image:url(images/Worm_Holes\,_By_OmniDaily.gif);">
+						<p style="line-height: 144px; font-size: 36px;color:white"> Fictie
 						</p>
 					</div></a>
 				</div>
