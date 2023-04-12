@@ -18,7 +18,7 @@ var chart = am4core.create("chartdiv", am4plugins_wordCloud.WordCloud);
 chart.fontFamily = "Anton";
 chart.background.fill = "#ebebe2";
 var series = chart.series.push(new am4plugins_wordCloud.WordCloudSeries());
-series.randomness = 0.1;
+series.randomness = 0.2;
 series.rotationThreshold = 0.5;
 
 series.data = [{
@@ -60,6 +60,7 @@ series.data = [{
 }, {
 	"tag": "Rouw",
 	"weight": 35
+
   }];
 
 series.dataFields.word = "tag";
@@ -85,11 +86,10 @@ series.labels.template.tooltipText = "{word}";
 
 var subtitle = chart.titles.create();
 subtitle.text = "(klik op een woord om het te openen)";
-subtitle.fontFamily = "Roboto"
+subtitle.fontFamily = "Anton"
 
 var title = chart.titles.create();
 title.text = "Afstudeeronderzoek";
-title.fontSize = 20;
-title.fontSize = "Roboto";
+title.fontSize = 40;
 title.fontWeight = "800";
-title.fontFamily = "Roboto"
+title.fontFamily = "Anton"
