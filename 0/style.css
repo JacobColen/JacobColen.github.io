@@ -1,0 +1,15 @@
+head {
+  font-family: "Anton", sans-serif;
+  background-color: #dcc814;
+
+};
+
+body {
+  font-family: "Anton", sans-serif;
+
+}
+
+#chartdiv {
+  width: 100vw;
+  height: 96vh;
+}
