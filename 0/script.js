@@ -78,7 +78,7 @@ series.heatRules.push({
 var hoverState = series.labels.template.states.create("hover");
 hoverState.properties.fill = am4core.color("#dcc814");
 
-series.labels.template.url = "https://jacobcolenbrander.nl/afstudeeronderzoek/{word}";
+series.labels.template.url = "https://jacobcolen.github.io/afstudeeronderzoek/{word}";
 series.labels.template.urlTarget = "_blank";
 
 series.labels.template.tooltipText = "{word}";
