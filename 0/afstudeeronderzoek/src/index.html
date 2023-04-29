@@ -1,0 +1,98 @@
+<style>body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+article {
+  display: flex;
+  width: 200%;
+  animation: bannermove 20s linear infinite;
+}
+
+article.paused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+div {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  background: red;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  width: 100%;
+  background: blue;
+}
+
+li:nth-child(2) {
+  background: green;
+}
+
+li:nth-child(3) {
+  background: yellow;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}</style>
+<script>var pauseBtn = document.getElementById("pause"),
+  tl = new TimelineMax();
+
+tl.staggerTo(".circle", 1.5, {x:640, repeat:-1, repeatDelay:0.5, force3D:true, ease:SlowMo.ease.config(0.2, 0.5)}, 0.15)
+
+pauseBtn.onclick = function() {
+article.paused(!tl.article());
+pauseBtn.innerHTML = article.paused() ? "play" : "pause";
+}
+</script>
+<section>
+  <button id="pause">Pause</button>
+  
+  <article>
+    <div>
+      <ul>
+        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+      </ul>
+    </div>
+  </article>
+</section>
