@@ -86,10 +86,10 @@ series.labels.template.tooltipText = "{word}";
 
 var subtitle = chart.titles.create();
 subtitle.text = "(klik op een woord om het te openen)";
-subtitle.fontFamily = "Anton"
+subtitle.fontFamily = "Roboto"
 
 var title = chart.titles.create();
-title.text = "Afstudeeronderzoek";
+title.text = "";
 title.fontSize = 40;
 title.fontWeight = "800";
 title.fontFamily = "Anton"
