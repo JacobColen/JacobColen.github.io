@@ -1,86 +1,14 @@
 <!DOCTYPE html>
-<script src="0\afstudeeronderzoek\observaties.js"></script>
-<script>$("button").click(function () {
-    $("article").toggleClass("paused");
-  });</script>
-<style>body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  button {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  
-  img {
-    display: block;
-    width: 100%;
-  }
-  
-  section {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  article {
-    display: flex;
-    width: 200%;
-    animation: bannermove 20s linear infinite;
-  }
-  
-  article.paused {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-  }
-  
-  div {
-    width: 100%;
-  }
-  
-  ul {
-    display: flex;
-    background: red;
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-  }
-  
-  li {
-    width: 100%;
-    background: blue;
-  }
-  
-  li:nth-child(2) {
-    background: green;
-  }
-  
-  li:nth-child(3) {
-    background: yellow;
-  }
+<head>
+  <link rel="stylesheet" href="/0/afstudeeronderzoek/pages/observaties.css"> 
+  <script src="/0/header.js"></script>
+  <div w3-include-html="/0/afstudeeronderzoek/header-2.html"></div>
+  <script>    includeHTML();</script>
+</head>
 
-  @keyframes bannermove {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  body { 
-    background-color: #ebebe2;
-  }
-  #contents {
-	display: inline-block;
-	width:400px;
-	padding: 0 47px;
-}
-  
-  </style>
+<body>
+  <link rel="stylesheet" href="/0/afstudeeronderzoek/pages/observaties.css"> 
 <section>
-    <button>Pause</button>
     <article>
       <div>
         <ul>
@@ -109,3 +37,5 @@
       </div>
     </section>
   </section>
+
+</body>
