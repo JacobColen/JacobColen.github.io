@@ -6,7 +6,7 @@
     min-width:inherit;
     max-width: 525px;
     margin: auto;
-    display;
+    border-radius: 20px;
 }
       
 .topnav a {
@@ -30,6 +30,7 @@
     color: white;
 }
 
+
 /** Simpele tekst **/
 body {
     background-color: #ebebe2;
@@ -52,15 +53,14 @@ p {
 }
 
 /** foto gallerij **/
+    /* card effect */
 .card {
-    /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     padding: 2px 16px;
     background-color: #ddd;
   }
-  
-  /* On mouse-over, add a deeper shadow */
+
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
@@ -70,6 +70,7 @@ p {
   .image-gallery {
     text-align: left;
     display: flex;
+    border-radius: 25px;
   }
   
   .image-gallery > li {
