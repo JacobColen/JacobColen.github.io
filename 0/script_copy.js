@@ -28,13 +28,13 @@ series.data = [{
 	"tag": "Queer",
 	"weight": 80
   }, {
-	"tag": "Cultuur",
+	"tag": "Woede",
 	"weight": 90
   }, {
-	"tag": "Definities",
+	"tag": "Stigma",
 	"weight": 25
   }, {
-	"tag": "Forum",
+	"tag": "Guilty Pleasure",
 	"weight": 30
   }, {
 	"tag": "Schuld",
@@ -46,19 +46,19 @@ series.data = [{
 	"tag": "Joods",
 	"weight": 20
   }, {
-	"tag": "Acceptatie",
+	"tag": "Narcisme",
 	"weight": 78
 }, {
-	"tag": "We zien",
+	"tag": "Acceptatie",
 	"weight": 40
 }, {
 	"tag": "Narratief",
 	"weight": 30
 }, {
-	"tag": "Normaal",
+	"tag": "Cultuur",
 	"weight": 25
 }, {
-	"tag": "We zijn",
+	"tag": "Rouw",
 	"weight": 35
 
   }];
