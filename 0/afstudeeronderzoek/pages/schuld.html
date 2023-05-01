@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="./style.css">
+
+<style>
+    </style>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&effect=outline">
+
+
+    <p style="position: absolute;">
+        <button onclick="window.location.href='/0/afstudeeronderzoek.html'">hoofdpagina</button>
+    </p>
+    <p style="position: absolute;right:0rem">
+        <button onclick="window.location.href='/0/afstudeeronderzoek/inhoudsopgave..html'">overzichtspagina</button>
+    </p>
+    <br>
+    <br>
+         
+  <div class="container" style="display:flex; align-items: center; justify-content: center;font-size: 40px;">Het spijt me..</div>
+  </head>
+
+  <body>
+    
+<style>
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-inline: auto;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+article {
+    position: relative;
+    padding: 5px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 48%;
+    max-width: 50%;
+  }
+  .row{
+    width: 90%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .row{
+    width: 100%;
+  }
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    border-radius: 5px;
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* hover */
+  .column article:hover .overlay {
+    transform: scale(1);
+  }
+
+
+</style>
+
+<div class="row">
+    <div class="column">
+        <article id="1"><p class="card">Die keer dat ik mijn moeder liet struikelen met een hockeystick.
+        </p>
+        <div onclick="disappear1()" class="overlay"><span>sorry</span></div></article>      
+        <article id="2"><p class="card">Het bordje van Santino dat ik per ongeluk brak.</p>
+            <div onclick="disappear2()" class="overlay"><span>sorry</span></div></article>    
+            <article id="3"><p class="card">Slecht communiceren met Hanan over mijn afstudeeronderzoek.</p>
+                <div onclick="disappear3()" class="overlay"><span>sorry</span></div></article>  
+                <article id="4"><p class="card">Dat ik het niet altijd erg vind dat mijn vader is overleden.
+                </p>
+                    <div onclick="disappear4()" class="overlay"><span>sorry</span></div></article>    
+    </div>
+    <div class="column">
+        <article id="5"><p class="card">Af en toe stiekem vlees eten. </p>
+            <div onclick="disappear5()" class="overlay"><span>sorry</span></div></article>  
+            <article id="6"><p class="card">Wanneer mensen zich zorgen maken over mij, maar ik niet weet hoe ik het moet oplossen.
+            </p>
+                <div onclick="disappear6()" class="overlay"><span>sorry</span></div></article>  
+                <article id="7"><p class="card">Dat ik niet altijd goed voor mezelf zorg. </p>
+                    <div onclick="disappear7()" class="overlay"><span>sorry</span></div></article>  
+                    <article id="8"><p class="card">Het klimaatprobleem, waar ik me nog steeds te weinig voor inzet.
+                    </p>
+                        <div onclick="disappear8()" class="overlay"><span>sorry</span></div></article>      
+    </div>
+    <div class="column">
+        <article id="9"><p class="card">Toen ik boos werd op mijn broer, omdat ik vond dat hij iets op een andere manier moest verwoorden.  </p>
+            <div onclick="disappear9()" class="overlay"><span>sorry</span></div></article>  
+            <article id="10"><p class="card">Het lijkt soms alsof ik mijn moeder teleurstel in alles.
+            </p>
+                <div onclick="disappear10()" class="overlay"><span>sorry</span></div></article>  
+                <article id="11"><p class="card">Ik gebruik soms ‘drukte’ als excuus om niets te doen.
+                </p>
+                    <div onclick="disappear11()" class="overlay"><span>sorry</span></div></article>  
+                    <article id="12"><p class="card">Ik ben niet altijd eerlijk over mijn emoties.
+                    </p>
+                        <div onclick="disappear12()" class="overlay"><span>sorry</span></div></article>     
+    </div>
+    <div class="column">
+        <article id="13"><p class="card">Het is niet moeilijk om in contact te blijven met Gijs (niet die Gijs), maar ik wil het eigenlijk niet meer.
+        </p>
+            <div onclick="disappear13()" class="overlay"><span>sorry</span></div></article>  
+            <article id="14"><p class="card">Ik zou mijn oma vaker moeten bezoeken, maar soms vind ik het te deprimerend.
+            </p>
+                <div onclick="disappear14()" class="overlay"><span>sorry</span></div></article>  
+                <article id="15"><p class="card">Hallo, help me</p>
+                    <div onclick="disappear15()" class="overlay"><span>sorry</span></div></article>  
+                    <article id="16"><p class="card">Hallo, help me</p>
+                        <div onclick="disappear16()" class="overlay"><span>sorry</span></div></article>      
+    </div>
+  </div>
+    
+<script>
+    function disappear1(){
+        document.getElementById("1").style.display = "none";
+    }
+    function disappear2(){
+        document.getElementById("2").style.display = "none";
+    }
+    function disappear3(){
+        document.getElementById("3").style.display = "none";
+    }
+    function disappear4(){
+        document.getElementById("4").style.display = "none";
+    }
+    function disappear5(){
+        document.getElementById("5").style.display = "none";
+    }
+    function disappear6(){
+        document.getElementById("6").style.display = "none";
+    }
+    function disappear7(){
+        document.getElementById("7").style.display = "none";
+    }
+    function disappear8(){
+        document.getElementById("8").style.display = "none";
+    }
+    function disappear9(){
+        document.getElementById("9").style.display = "none";
+    }
+    function disappear10(){
+        document.getElementById("10").style.display = "none";
+    }
+    function disappear11(){
+        document.getElementById("11").style.display = "none";
+    }
+    function disappear12(){
+        document.getElementById("12").style.display = "none";
+    }
+    function disappear13(){
+        document.getElementById("13").style.display = "none";
+    }
+    function disappear14(){
+        document.getElementById("14").style.display = "none";
+    }
+    function disappear15(){
+        document.getElementById("15").style.display = "none";
+    }
+    function disappear16(){
+        document.getElementById("16").style.display = "none";
+    }
+</script>
+
+
+
+  </body>
