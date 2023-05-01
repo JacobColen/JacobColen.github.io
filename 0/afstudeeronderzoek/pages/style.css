@@ -40,9 +40,14 @@ head {
     background-color: #ebebe2;
 }
 h1 {
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
     padding: 10px;
+}
+h2 {
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
 }
 
 p {
@@ -69,7 +74,8 @@ audio {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 5%;
+  margin-bottom:5%;
 }
 
 /** foto gallerij **/

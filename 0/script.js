@@ -54,9 +54,6 @@ series.data = [{
 	"tag": "We zien",
 	"weight": 40
 }, {
-	"tag": "Narratief",
-	"weight": 30
-}, {
 	"tag": "Normaal",
 	"weight": 25
 }, {
