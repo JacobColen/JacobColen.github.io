@@ -60,6 +60,17 @@ p {
   max-width: 800px;
   margin:auto;
 }
+audio {
+  align-items: center; 
+  justify-content: center;
+  display: auto;
+}
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
 
 /** foto gallerij **/
     /* card effect */
