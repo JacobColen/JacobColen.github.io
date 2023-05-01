@@ -80,7 +80,7 @@ var hoverState = series.labels.template.states.create("hover");
 hoverState.properties.fill = am4core.color("#dcc814");
 
 series.labels.template.url = "https://jacobcolen.github.io/0/afstudeeronderzoek/pages/{word}.html";
-series.labels.template.urlTarget = "_blank";
+series.labels.template.urlTarget = "_self";
 
 series.labels.template.tooltipText = "{word}";
 
