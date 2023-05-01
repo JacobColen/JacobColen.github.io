@@ -12,6 +12,8 @@
 
 // Themes begin
 am4core.useTheme(am4themes_animated);
+am4core.options.queue = true;
+am4core.options.deferredDelay = 500;
 
 
 var chart = am4core.create("chartdiv", am4plugins_wordCloud.WordCloud);
@@ -79,10 +81,8 @@ series.heatRules.push({
 var hoverState = series.labels.template.states.create("hover");
 hoverState.properties.fill = am4core.color("#dcc814");
 
-series.labels.template.url = "https://jacobcolen.github.io/0/afstudeeronderzoek/pages/{word}.html";
+series.labels.template.url = "/0/afstudeeronderzoek/pages/{word}.html";
 series.labels.template.urlTarget = "_self";
-
-series.labels.template.tooltipText = "{word}";
 
 var subtitle = chart.titles.create();
 subtitle.text = "(klik op een woord om het te openen)";

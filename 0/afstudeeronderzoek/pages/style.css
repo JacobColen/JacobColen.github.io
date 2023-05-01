@@ -52,6 +52,12 @@ p {
     max-width: 500px;
     margin: auto;
 }
+#titel {
+  display:flex; 
+  align-items: center; 
+  justify-content: center;
+  font-size: 40px;
+}
 
 /** foto gallerij **/
     /* card effect */
@@ -132,3 +138,84 @@ p {
   .image-gallery li:hover .overlay {
     transform: scale(1);
   }
+
+
+/** Quiz **/
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .flexgrid .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flexgrid .container:after {
+    flex: auto;
+    margin: 0 auto;
+    content: "";
+  }
+  .flexgrid .container > * {
+    width: calc( 50% - 0.5rem );
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .flexgrid .container > *:nth-child(1) {
+    margin-left: 0;
+  }
+  .flexgrid .container > *:nth-child(2n) {
+    margin-right: 0;
+  }
+  .flexgrid .container > *:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 999px) {
+  .flexgrid .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flexgrid .container:after {
+    flex: auto;
+    margin: 0 auto;
+    content: "";
+  }
+  .flexgrid .container > * {
+    width: calc( 33.3333333333% - 0.6666666667rem );
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .flexgrid .container > *:nth-child(1) {
+    margin-left: 0;
+  }
+  .flexgrid .container > *:nth-child(3n) {
+    margin-right: 0;
+  }
+  .flexgrid .container > *:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .flexgrid .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flexgrid .container:after {
+    flex: auto;
+    margin: 0 auto;
+    content: "";
+  }
+  .flexgrid .container > * {
+    width: calc( 25% - 0.75rem );
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .flexgrid .container > *:nth-child(1) {
+    margin-left: 0;
+  }
+  .flexgrid .container > *:nth-child(4n) {
+    margin-right: 0;
+  }
+  .flexgrid .container > *:nth-child(4n + 1) {
+    margin-left: 0;
+  }
+}

@@ -41,7 +41,7 @@ function dragDrop() {
     matchingCounter++;
   }
 
-  if (matchingCounter === 5) {
+  if (matchingCounter === 6) {
     endMessage.style.display = 'block';
   }
 
@@ -64,6 +64,9 @@ function checkForMatch(selected, dropTarget) {
 
     case 'e5':
       return dropTarget === 's5' ? true : false;
+    
+    case 'e6':
+        return dropTarget === 's6' ? true : false;
 
     default:
       return false;
@@ -86,6 +89,9 @@ function checkForMatch2(selected, dropTarget) {
 
     case 's5':
       return dropTarget === 'e5' ? true : false;
+
+    case 's6':
+      return dropTarget === 's6' ? true : false;
 
     default:
       return false;
