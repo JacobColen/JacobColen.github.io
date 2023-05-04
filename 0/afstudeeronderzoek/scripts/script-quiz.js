@@ -4,8 +4,8 @@ const questions = [
         optionA: "Iets wat wordt afgekeurd",
         optionB: "Een gemoedstoestand waarbij het geweten een mens plaagt",
         optionC: "Iets wat wordt afgekeurd",
-        optionD: "7 days",
-        correctOption: "Een onaangename psychosociale emotie ten aanzien van het afwijken van de eigen normen"
+        optionD: "Een onaangename psychosociale emotie ten aanzien van het afwijken van de eigen normen",
+        correctOption: "optionD"
     },
 
     {
